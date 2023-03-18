@@ -17,11 +17,8 @@ class StudentController extends Controller
         $student -> email_address = $request -> input('email_address');
         $student -> password = $request -> input('password');
 
-
         $student -> save();
         return response()->json($student, 200);
-
-        //return ["data"=>"result "];
     }
 
 }
